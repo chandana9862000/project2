@@ -41,5 +41,12 @@ namespace AtmBankingApi.Controllers
             _customerService.UpdateCustomer(customer);
             return Ok("Customer details updated successfully!!");
         }
+        //[HttpPost("Register")]
+        //public IActionResult Register([FromBody] Customer customer)
+        //{
+        //    _customerService.Register( customer);
+        //    return Ok("Register successfully!!");
+        //}
     }
 }
+

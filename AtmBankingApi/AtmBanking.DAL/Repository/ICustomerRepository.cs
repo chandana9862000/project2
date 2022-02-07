@@ -9,9 +9,9 @@ namespace AtmBanking.DAL.Repository
     {
         void AddCustomer(Customer customer);
         void UpdateCustomer(Customer customer);
-        void DeleteCustomer(int Card_no);
-        Customer GetCustomerByCard_no(int Card_no);
+        void DeleteCustomer(int card_no);
+        Customer GetCustomerBycard_no(int card_no);
         IEnumerable<Customer> GetCustomers();
-        void Register(Customer customer);
+
     }
 }

@@ -14,7 +14,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
 namespace AtmBankingApi
 {
     public class Startup
@@ -33,8 +32,9 @@ namespace AtmBankingApi
             services.AddDbContext<AtmDbContext>(options => options.UseSqlServer(connectionStr));
             services.AddControllers();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<ICustomerInfoRepository, CustomerInfoRepository>();
             services.AddTransient<CustomerService, CustomerService>();
-
+            services.AddTransient<CustomerInfoService, CustomerInfoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

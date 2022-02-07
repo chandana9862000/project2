@@ -30,14 +30,16 @@ namespace AtmBanking.BAL.services
             _customerRepository.DeleteCustomer(card_no);
         }
         //Get GetCustomerBycard_no
-        public void GetCustomerByCard_no(int card_no)
+        public void GetCustomerBycard_no(int card_no)
         {
-            _customerRepository.GetCustomerByCard_no(card_no);
+            _customerRepository.GetCustomerBycard_no(card_no);
         }
-        //Get GetMovies
+        //Get GetCustomers
         public IEnumerable<Customer> GetCustomers()
         {
             return _customerRepository.GetCustomers();
         }
+
+
     }
 }
